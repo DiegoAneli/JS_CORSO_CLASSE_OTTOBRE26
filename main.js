@@ -11,26 +11,26 @@ qualcosa di js
 
 //dichiarazione di una variabile
 
-var nome = "Pippo"; // Stringa cioè "parola/insiemi di caratteri"
+//var nome = "Pippo"; // Stringa cioè "parola/insiemi di caratteri"
 
 //per stampare in console la variabile
-console.log(nome);
+//console.log(nome);
 
 
 //variabile di tipo numero
-var nome = 5;
-console.log(nome);
+//var nome = 5;
+//console.log(nome);
 
 //variabile di tipo double -> numeri con la virgola decimali e anche negativi
-var numeroNegativo = -10.99;
-console.log(numeroNegativo);
+//var numeroNegativo = -10.99;
+//console.log(numeroNegativo);
 
 //constanti -> a differenza delle variabili non posso cambiare il valore al suo interno
-const pigreco = 3.14;
+//const pigreco = 3.14;
 
 
 //tipo booleano  vero/falso -> true/false ->  zero e uno (0/1)
-
+/*
 var lampadinaAccesa = true;  
 var lampadinaSpenta = false;
 var numero = 4;
@@ -43,7 +43,7 @@ console.log("Questa è la lampadina spenta : ", lampadinaSpenta);
 console.log("Questa è la lampadina accesa : ", lampadinaAccesa);
 console.log("Questo è il valore del numero : ", numero);
 
-
+*/
 
 
 //----------------------------OPERATORI ARITMETICI---------------------------
@@ -52,7 +52,7 @@ console.log("Questo è il valore del numero : ", numero);
 // + - * /  anche il resto (di una divisione) %(modulo)
 
 //somma di due numeri
-
+/*
 var numeroSomma1 = 10;
 var numeroSomma2 = 20;
 
@@ -61,10 +61,10 @@ var somma = numeroSomma1 + numeroSomma2;
 
 console.log("Questa è la somma dei due numeri : ", somma);
 
-
+*/
 
 //sottrazione di due numeri
-
+/*
 var numeroSottrazione1 = 20;
 var numeroSottrazione2 = 10;
 
@@ -95,3 +95,69 @@ var numeroDivisione2 = 10;
 var divisione = numeroDivisione1 / numeroDivisione2;
 
 console.log("Questa è la divisione dei due numeri : ", divisione);
+
+
+//Modulo - Resto
+
+var numero1 = 9;
+var numero2 = 2;
+
+var modulo = numero1 % numero2;
+
+console.log("Ecco il resto della divisione dei due numeri : ", modulo);
+
+*/
+
+//----------------------------COME CHIEDERE DATI ALL UTENTE TRAMITE PROMPT()-----------------
+
+//var (versione es5) -> let (vers es8)
+
+//chiedo qualcosa a schermo
+
+
+//PROMPT();
+//let nomeInserito = prompt("Inserisci un nome :");
+
+//console.log(nomeInserito);
+
+
+//CONFIRM();
+//let qualcosaInserito= confirm("ACCETTI L INFORMATIVA PER LA PRIVACY ?");
+
+//console.log(qualcosaInserito);
+
+/*
+let n = 5;
+let n2 = 4;
+
+let sommaN = n + n2;
+
+console.log(sommaN);
+*/
+
+/*
+let n1 = parseInt(prompt("Inserisci il primo numero"));
+
+let n2 = parseInt(prompt("Inserisci il secondo numero"));
+
+let n3 = parseFloat(prompt("Inserisci il primo numero decimale"));
+
+let n4 = parseFloat(prompt("Inserisci il secondo numero decimale"));
+
+let risultato = n1 + n2;
+let risultato2 = n3 + n4;
+
+console.log(risultato);
+console.log(risultato2);
+
+*/
+
+//---------------------------Mostrare in pagina tramite ALERT()---------------------
+
+//alert("attenzione!");
+
+//chiedo qualcosa all utente gazie alla funct prompt(), tipizzo il intero, e salvo in let n
+let n = parseInt(prompt("Inserisci il numero : "));
+
+//mando a schermo un Alert funct con il valore della variabile n concatenandolo con + 
+alert("Il numero inserito è: " + n);
