@@ -157,7 +157,59 @@ console.log(risultato2);
 //alert("attenzione!");
 
 //chiedo qualcosa all utente gazie alla funct prompt(), tipizzo il intero, e salvo in let n
-let n = parseInt(prompt("Inserisci il numero : "));
+//let n = parseInt(prompt("Inserisci il numero : "));
 
 //mando a schermo un Alert funct con il valore della variabile n concatenandolo con + 
-alert("Il numero inserito è: " + n);
+//alert("Il numero inserito è: " + n);
+
+
+
+//---------------------------------------esercizio--------------------------
+
+//chiedo all utente 3 numeri 2 interi e un decimale e faccio la somma e mando il risultato 
+//della somma a pagina 
+
+
+//3 prompt x i 3 num e salvare in variabile
+//somma 
+//alert della somma
+/*
+let n1 = parseInt(prompt("inserisci il primo numero : "));
+let n2 = parseInt(prompt("inserisci il secondo numero : "));
+let n3 = parseFloat(prompt("inserisci il terzo numero : "));
+
+let somma = n1 + n2 + n3;
+
+//mando a schermo
+alert("La somma dei numeri è : " + somma);
+*/
+
+//--------------------------------OPERATORI DI CONFRONTO------------------
+
+
+// = UGUALE
+// ! DIVERSO
+// === STRETTAMENTE UGUALE
+// > MAGGIORE
+// >= MAGGIORE UGUALE
+// < MINORE
+// <= MINORE UGUALE
+
+
+//----------------------------------COSTRUTTI IF ELSE---------------------
+
+
+let password1 = prompt("Inserisci la prima password");
+
+let password2 = prompt("Inserisci la seconda password");
+
+
+if (password1 === password2){
+
+    alert("ok sei dentro");
+
+}else {
+
+    alert("stai fuori");
+
+}
