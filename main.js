@@ -446,7 +446,12 @@ console.log(animali);
 
 //conversione di un dato da Numero a Stringa
 
-let num = 8;
-let num2 = num.toString(); //diventa una stringa
+let num = 8; //numero
+let num2 = num.toString(); // converto numero che diventa una stringa
+
+//let datoInNumero = Number(num); 
+//console.log(typeof datoInNumero);
 
 console.log(typeof num2);
+console.log(typeof num);
+
