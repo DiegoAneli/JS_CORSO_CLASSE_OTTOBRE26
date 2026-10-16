@@ -53,3 +53,24 @@ Chiedo all utente un numero, e stampa "pippo" se il numero inserito è un multip
 
 
 
+# 6 
+
+Abbiamo un sistema che ha una lista di codici di accesso
+
+codici : 101, 202, 303, 404
+
+l utente deve inserire un codice con il quale accede al sistema
+
+il programma deve verificare : se il codice è valido
+                                e se rientra  in un certo intervallo di sicurezza
+
+Richieste : chiedere all utente di inserire un codice tramite prompt
+            convertire il valore inserito in numero
+            verificare che il codice sia presente nell array e contemporaneamente se è maggiore 
+            o ugulale a 100 e minore o uguale a 400
+
+            - Se entrambe le condizioni sono vere, stampa "Accesso consentito"
+
+            - Se il codice è nell array, 
+                MA è fuori dall intervallo, -> stampa "codice valido ma fuori dal range"
+            - Se il codice non è presente -> "Accesso negato" 

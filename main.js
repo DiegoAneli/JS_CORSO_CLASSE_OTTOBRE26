@@ -508,8 +508,10 @@ for(let i = 0; i <= 10; i++ ){
 
 //array dei numeri inserti
 let arrayNum = [];
-
 let risultati = [];
+
+let votiSufficienti = [];
+let votiNonSufficienti = [];
 
 for (let i = 0; i < 6; i++){
 
@@ -527,7 +529,35 @@ for (let i = 0; i < 6; i++){
         risultati.push("Dispari");
     }
 
+
+    if (num >= 6 && num <= 10 ){
+
+        votiSufficienti.push(num);
+
+    }else if(num <= 0 && num <= 10){
+
+        votiNonSufficienti.push(num);
+
+    }else if(num > 10){
+
+        console.log("valore non corretto")
+    }
+
 }
 
 console.log("Numeri Inseriti : ", arrayNum.join(", "));
 console.log("Risultati : ", risultati.join(", "));
+
+console.log("Voti non suff",votiNonSufficienti);
+console.log("Voti suff",votiSufficienti);
+
+//svolgimento in parole : prendo ciò che scrive l utente, dal prompt, controllo che sia un numero,
+//lo salvo in una variabile (num) , pusho questa variabile dentro all array dichiarato vuoto sopra al ciclo for
+//l array verrà popolato ogni volta che verrà inserito un valore nel prompt(in questo caso 6 numeri)
+//non vedroò nel codice i numeri aggiungersi nell array ,
+//ma potro' stamparlo e leggere i valori inseriti in console.log
+
+
+
+
+
