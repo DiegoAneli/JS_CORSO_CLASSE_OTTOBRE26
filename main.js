@@ -514,7 +514,7 @@ let risultati = [];
 for (let i = 0; i < 6; i++){
 
     //salvo il numero insierito in variabile num
-    let num = parseInt(prompt("Inserisci un numero : "));
+    let num = parseInt(prompt("Inserisci un numero ("+ (i+1) + " di 6) : "));
 
     arrayNum.push(num);
 
@@ -529,5 +529,5 @@ for (let i = 0; i < 6; i++){
 
 }
 
-console.log("Numeri Inseriti : ", arrayNum);
-console.log("Risultati : ", risultati);
+console.log("Numeri Inseriti : ", arrayNum.join(", "));
+console.log("Risultati : ", risultati.join(", "));
