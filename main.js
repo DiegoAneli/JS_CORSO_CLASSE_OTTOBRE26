@@ -455,3 +455,79 @@ let num2 = num.toString(); // converto numero che diventa una stringa
 console.log(typeof num2);
 console.log(typeof num);
 
+
+
+
+
+
+//-------------------------------------------CICLI FOR / WHILE--------------------------------------------------
+
+
+
+let gatti = ["ugo", "poldo","ziggy"];
+
+for(let i = 0; i < gatti.length; i++ ){
+    
+    console.log(gatti[i]);
+}
+
+
+let variabile = true;
+
+while(!variabile){
+
+    console.log(variabile);
+}
+
+
+
+// Iterazione o ripetizione per N volte per la length dell array
+
+
+let esempio = 0; //dichiarazione e inizializzazione di una variabile
+
+
+//inizializzazione  let i;
+
+//dichiarazione  let i = 0;
+
+//utilizzo  i >= qualcosa
+
+
+//inizializzazione -> condizione -> incremento(o decremento)
+for(let i = 0; i <= 10; i++ ){
+
+    console.log(i);
+}
+
+
+
+
+
+//-------------------------------esercizio
+
+//array dei numeri inserti
+let arrayNum = [];
+
+let risultati = [];
+
+for (let i = 0; i < 6; i++){
+
+    //salvo il numero insierito in variabile num
+    let num = parseInt(prompt("Inserisci un numero : "));
+
+    arrayNum.push(num);
+
+    //controllo se pari o dispari
+    if (num % 2 === 0){
+
+        risultati.push("Pari");
+    }else{
+
+        risultati.push("Dispari");
+    }
+
+}
+
+console.log("Numeri Inseriti : ", arrayNum);
+console.log("Risultati : ", risultati);
