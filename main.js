@@ -174,6 +174,7 @@ console.log(risultato2);
 //somma 
 //alert della somma
 /*
+
 let n1 = parseInt(prompt("inserisci il primo numero : "));
 let n2 = parseInt(prompt("inserisci il secondo numero : "));
 let n3 = parseFloat(prompt("inserisci il terzo numero : "));
@@ -188,20 +189,61 @@ alert("La somma dei numeri è : " + somma);
 
 
 // = UGUALE
-// ! DIVERSO
+// != DIVERSO
 // === STRETTAMENTE UGUALE
 // > MAGGIORE
 // >= MAGGIORE UGUALE
 // < MINORE
 // <= MINORE UGUALE
+// !== STRETTAMENTE DIVERSO
 
 
-//----------------------------------COSTRUTTI IF ELSE---------------------
 
+//--------------------------------OPERATORI LOGICI--------------------------------------
+
+
+
+// && "AND" logico confronto "entrmabi/e"
+// || "OR"  logico confronto "OPPURE"
+// !  "NOT" logic confronto "NEGAZIONE / NON ESISTE"
+
+
+
+//---------------------------------CONDIZIONI/COSTRUTTI-------------------------------------
+
+
+
+//-----------IF ELSE---------------------
+
+// !parola -> non esiste
+/*
+if(condizione){
+
+    //se è vera entro qui dentro
+
+}else{
+
+    //entro qui dentro
+}
+
+
+if (!bici){
+
+    //vado a piedi
+}else {
+
+    //vado in bici
+}
+
+
+*/
+
+/*
 
 let password1 = prompt("Inserisci la prima password");
 
 let password2 = prompt("Inserisci la seconda password");
+
 
 
 if (password1 === password2){
@@ -213,3 +255,57 @@ if (password1 === password2){
     alert("stai fuori");
 
 }
+*/
+
+//semaforo
+/*
+let semaforo = prompt("Che colore è il semaforo? Verde o Rosso?");
+
+let semaforoMinuscolo = semaforo.toLowerCase();
+
+if (semaforoMinuscolo === "rosso" ){
+
+    console.log("Devi fermarti!");
+
+}else if (semaforoMinuscolo === "verde"){
+
+    console.log("passa...");
+
+}else {
+
+    console.log("fai quello che credi");
+
+}
+*/
+
+
+
+
+//--------------------------------OPERATORI LOGICI--------------------------------------
+
+
+
+// && "AND" logico confronto "entrmabi/e"
+// || "OR"  logico confronto "OPPURE"
+// !  "NOT" logic confronto "NEGAZIONE / NON ESISTE"
+
+
+
+//chiedo tramite prompt l età all utente e la converto in numero Intero
+let eta = parseInt(prompt("Inserisci la tua età : "));
+
+//voglio consentire l accesso al cinema solo tra i 18 e i 65 anni
+
+if (eta >= 18 && eta <= 65){
+
+    alert("accesso consentito");
+
+}else{
+
+    alert("accesso negato");
+}
+
+
+
+
+//chiedo all utente il giorno della settimana e il programma dovrà dirmi se è weekend oppure no.
