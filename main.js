@@ -285,11 +285,11 @@ if (semaforoMinuscolo === "rosso" ){
 
 
 
-// && "AND" logico confronto "entrmabi/e"
+// && "AND" logico confronto "entrambi/e"
 // || "OR"  logico confronto "OPPURE"
 // !  "NOT" logic confronto "NEGAZIONE / NON ESISTE"
 
-
+/*
 
 //chiedo tramite prompt l età all utente e la converto in numero Intero
 let eta = parseInt(prompt("Inserisci la tua età : "));
@@ -305,7 +305,148 @@ if (eta >= 18 && eta <= 65){
     alert("accesso negato");
 }
 
-
+*/
 
 
 //chiedo all utente il giorno della settimana e il programma dovrà dirmi se è weekend oppure no.
+
+/*
+
+let giorno = prompt("Che giorno è?").toLowerCase();
+
+if (giorno === "sabato" || giorno === "domenica"){
+
+    alert("è weekend");
+
+}else if(giorno !== "sabato" || giorno !== ("domenica")){
+
+    alert("non è un giorno");
+    
+}else{
+
+    alert("è feriale e non si beve");
+}
+
+
+
+//chiedo all utente se è estate o no
+
+let mese = prompt("Inserisci il mese : ").toLowerCase();
+
+if (mese === "giugno" || mese === "luglio" || mese === "agosto"){
+
+    alert("è estate");
+
+}else{
+
+    alert("non è estate");
+}
+
+*/
+
+
+
+
+//---------------------------------ARRAY-------------------------------------------
+
+//un insieme di dati strutturati con posizione e valore
+
+//questo è un array vuoto
+let colori = [];
+
+//posizione   0        1       2       3
+let nomi = ["diego", "luca", "mario", "giorgio"];
+let numeri = [7, 8, 9, 3, 4, 5, 3, 7, 10];
+let arrayMisto = ["diego", 2, 38,"giorgio", 42];
+
+//valore delle posizioni è il nome stesso
+
+//stampo tutto l array di nomi
+console.log(nomi);
+
+//stampo tutto l array di numeri
+console.log(numeri);
+
+//stampo qualcosa dell array misto
+console.log(arrayMisto[3]);
+
+//stampare solamente diego
+console.log(nomi[0]);
+//stampare solemante mario
+console.log(nomi[2]);
+
+
+//-----------------modificare un dato nell array-------
+
+let arrayColori = ["giallo", "verde", "rosso"];
+
+console.log(arrayColori);
+
+arrayColori[0] = "viola";
+
+console.log(arrayColori);
+
+//come aggiungere un elemento alla fine
+arrayColori.push(50);
+
+console.log(arrayColori);
+
+//come aggiungere elemento all inizio
+
+arrayColori.unshift("pippo");
+
+console.log(arrayColori);
+
+
+//come eliminare l ultimo elemento
+
+arrayColori.pop();
+console.log("Ho rimosso l ultimo elemento", arrayColori);
+
+//come eliminare il primo elemento
+
+arrayColori.shift();
+console.log("Ho rimosso il primo elemento", arrayColori);
+
+
+//come trovare posizione di un elemento conoscendo l elemento da cercare
+let auto = ["bmw", "audi", "subaru", "panigale"];
+
+let posizione = auto.indexOf("subaru");
+
+console.log(posizione);
+
+
+
+//come verificare se un elemento è presente nell array
+let ricercaAuto = auto.includes("toyota");
+//il metodo includes() restituisce un valore booleano(true o false)
+console.log(ricercaAuto);
+
+
+//unire due array
+let a = ["uno", "due"];
+let b = ["tre", "quattro"];
+
+let arrayUnito = a.concat(b);
+let arrayUnitoReverse = b.concat(a);
+
+console.log(arrayUnito);
+console.log(arrayUnitoReverse);
+
+//trasformare un array in stringa
+
+let animali = ["gatto", "cane","procione"];
+
+let frase = animali.join(" - ");
+
+console.log(frase);
+console.log(animali);
+
+
+//conversione di un dato da Numero a Stringa
+
+let num = 8;
+let num2 = num.toString(); //diventa una stringa
+
+console.log(typeof num2);
