@@ -118,12 +118,12 @@ let sconto = parseFloat(prompt("sconto : "));
 
 
 
-function calcolaPrezzo(prezzo, sconto){
+function calcolaPrezzo(x, y){
 
     //formula calcolo sconto
-    let valoresconto = (prezzo * sconto) / 100;
+    let valoresconto = (x * y) / 100;
 
-    let prezzofinale = prezzo - valoresconto;
+    let prezzofinale = x - valoresconto;
 
     return prezzofinale.toFixed(2);
 
