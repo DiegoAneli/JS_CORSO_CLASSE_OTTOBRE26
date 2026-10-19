@@ -111,12 +111,30 @@ alert(messaggio);
 // i prezzi sono decimali -> parsefloat()
 // - al risultato applicate risultato.toFixed(2)
 
+let prezzo = parseFloat(prompt("Prezzo : "));
+let sconto = parseFloat(prompt("sconto : "));
+
+
+
+
+
 function calcolaPrezzo(prezzo, sconto){
 
-    //calcolo sconto
-    
+    //formula calcolo sconto
+    let valoresconto = (prezzo * sconto) / 100;
+
+    let prezzofinale = prezzo - valoresconto;
+
+    return prezzofinale.toFixed(2);
+
 
 }
+
+//richiamo al funzione e salvo in variabile che andrà stampata
+
+let risultatoConSconto = calcolaPrezzo(prezzo,sconto);
+
+console.log("Questo è il prezzo finale ", risultatoConSconto, "Euro");
 
 
 
