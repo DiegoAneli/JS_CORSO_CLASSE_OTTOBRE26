@@ -99,3 +99,28 @@ let messaggio = verificaEta(etaUtente);
 console.log(messaggio);
 alert(messaggio);
 
+
+
+
+
+//esercizio
+
+//creare una funzione che calcola il prezzo di un prodotto
+// - in base alla percentuale di sconto inserita dall utente
+//Chiedi all utente il prezzo del prodotto e la % di sconto
+// i prezzi sono decimali -> parsefloat()
+// - al risultato applicate risultato.toFixed(2)
+
+function calcolaPrezzo(prezzo, sconto){
+
+    //calcolo sconto
+    
+
+}
+
+
+
+
+
+
+
