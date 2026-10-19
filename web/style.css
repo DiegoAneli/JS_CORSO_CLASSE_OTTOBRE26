@@ -12,4 +12,7 @@
     height: 100px;
     background-color: red;
     position: relative;
+    text-align: center;
+    align-content: center;
+    font-weight: 600;
 }

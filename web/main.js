@@ -61,7 +61,8 @@ function saluta(){
 function scalaRuota(){
 
     
-    
+    box.style.transform = "rotate(180deg) scale(1.5)";
+    box.style.transition = "transform 5s ease"
 
 
 }
