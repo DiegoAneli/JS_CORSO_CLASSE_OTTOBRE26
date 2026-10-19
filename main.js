@@ -493,19 +493,20 @@ let esempio = 0; //dichiarazione e inizializzazione di una variabile
 
 //utilizzo  i >= qualcosa
 
-
+/*
 //inizializzazione -> condizione -> incremento(o decremento)
 for(let i = 0; i <= 10; i++ ){
 
     console.log(i);
 }
 
+*/
 
 
 
 
 //-------------------------------esercizio
-
+/*
 //array dei numeri inserti
 let arrayNum = [];
 let risultati = [];
@@ -551,6 +552,7 @@ console.log("Risultati : ", risultati.join(", "));
 console.log("Voti non suff",votiNonSufficienti);
 console.log("Voti suff",votiSufficienti);
 
+*/
 //svolgimento in parole : prendo ciò che scrive l utente, dal prompt, controllo che sia un numero,
 //lo salvo in una variabile (num) , pusho questa variabile dentro all array dichiarato vuoto sopra al ciclo for
 //l array verrà popolato ogni volta che verrà inserito un valore nel prompt(in questo caso 6 numeri)
@@ -559,5 +561,28 @@ console.log("Voti suff",votiSufficienti);
 
 
 
+
+
+//chiedi all utente 10 numeri 
+//se il numero inserito è maggiore di 34 stampa ciao
+//e stampa tutti i numeri inseriti
+
+
+//input dell utente tipizzato/salvato/confrontato/stampato
+
+//dichiaro un array vuoto che verrà riempito con i numeri inseriti dal utente
+let numeriTotali = [];
+
+
+for (let i = 0; i < 3; i++){
+
+
+    let numeroInserito = parseInt(prompt("Inserisci un numero"));
+
+    numeriTotali.push(numeroInserito);
+
+}
+
+console.log(numeriTotali);
 
 
