@@ -22,11 +22,11 @@ function sfidaGiocatori(){
     //Confronto dei risultati
     if(totaleG1 > totaleG2){
 
-        vincitore = "Vince il giocatore 1!";
+        vincitore = "Vince il giocatore 1 !";
 
     }else if(totaleG1 < totaleG2){
 
-        vincitore = "Vince il giocatore 2!";
+        vincitore = "Vince il giocatore 2 !";
     }else{
 
         vincitore = "Pareggio!";
@@ -35,9 +35,9 @@ function sfidaGiocatori(){
     //visualizzazione del risultato
     document.getElementById("risultatoDadi").textContent = 
     
-    "Giocatore 1 :" + dado1G1 + " + " + dado1G2 + " = " + totaleG1 +
-    "| Giocatore 2: " + dado2G1 + " + " + dado2G2 + " = " + totaleG2 + 
-    "Vincitore : " + vincitore;
+    "Giocatore 1 :" + dado1G1 + " + " + dado2G1 + " = " + totaleG1 +
+    " | Giocatore 2: " + dado1G2 + " + " + dado2G2 + " = " + totaleG2 + 
+    " | Vincitore : " + vincitore;
 
 
 
