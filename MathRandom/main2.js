@@ -21,11 +21,46 @@ console.log(numero3);
 console.log(numero4);
 
 
-
+/*
 //esercizio indovina numero
+//chiedo all utente un numero tramite prompt (tipizzate!)
+//(dovrà cercare di indovinare il numero generato dal sistema(tramite math random))
+//se indovina messaggio : "hai indovinato" if === 
+//altrimenti -> messaggio "riprova" (else)
+
+//il sistema genera un numero casuale    
+let numeroCasuale = Math.floor(Math.random() * 5) + 1 ;
+
+console.log(numeroCasuale);
+
 //chiedo all utente un numero
-//(dovrà cercare di indovinare il numero generato dal sistema)
-//se indovina messaggio : "hai indovinato"
-//altrimenti -> messaggio "riprova" 
+let input = prompt("Inserisci un numero da indovinare tra 1 e 5");
 
+//trasformo in Number
+let numeroUtente = Number(input);
+console.log(numeroUtente);
 
+//confronto dei valori
+if(numeroCasuale === numeroUtente){
+
+    console.log("indovinato");
+}else{
+
+    console.log("Riprova");
+}
+
+*/
+
+//esercizio: del lancio della moneta (dire se esce testa o croce)
+
+let moneta = Math.floor(Math.random() * 2);
+
+console.log(moneta);
+
+if(moneta === 0 ){
+
+    console.log("testa!")
+}else{
+
+    console.log("croce");
+}
