@@ -13,8 +13,10 @@ function parla(){
 
 function mostraMes(){
 
-    document.getElementById("testo").innerHTML = "Hai cliccato il bottone!";
+    document.getElementById("testo").innerHTML = "Pippo!";
 }
+
+////////////////////////////////////////////////////////////////////
 
 
 function salutaUtente(){

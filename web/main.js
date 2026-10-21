@@ -1,31 +1,34 @@
 function originale(){
 
-    box.style.width = "100px";
-    box.style.height = "100px";
-    box.style.backgroundColor = "red";
+    box_red.style.width = "100px";
+    box_red.style.height = "100px";
+    box_red.style.backgroundColor = "red";
     posizione = 0;
-    box.style.left = posizione + "px";
+    box_red.style.left = posizione + "px";
     
 }
 
 
 function ingrandisci(){
 
-    box.style.width = "150px";
-    box.style.height = "150px";
+    box_red.style.width = "150px";
+    box_red.style.height = "150px";
+    box_green.style.width = "150px";
+    box_green.style.height = "150px";
 }
 
 
 function riduci(){
 
-    box.style.width = "50px";
-    box.style.height = "50px";
+    box_red.style.width = "50px";
+    box_red.style.height = "50px";
 }
 
 
 function cambiaColore(){
 
-    box.style.backgroundColor = "blue";
+    box_red.style.backgroundColor = "#2b1919";
+    box_red.style.color = "#ffff";
 }
 
 
@@ -37,13 +40,13 @@ let posizione = 0;
 function spostaDestra(){
 
     posizione += 20;
-    box.style.left = posizione + "px";
+    box_red.style.left = posizione + "px";
 }
 
 function spostaSinistra(){
 
     posizione -= 20;
-    box.style.left = posizione + "px";
+    box_red.style.left = posizione + "px";
 
 }
 
@@ -61,8 +64,8 @@ function saluta(){
 function scalaRuota(){
 
     
-    box.style.transform = "rotate(180deg) scale(1.5)";
-    box.style.transition = "transform 5s ease"
+    box_red.style.transform = "rotate(180deg) scale(1.5)";
+    box_red.style.transition = "transform 5s ease"
 
 
 }

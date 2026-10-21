@@ -6,12 +6,37 @@
 }
 
 
-#box{
+.pers{
+
+    position: relative;
+}
+
+.btn_pers{
+
+    position: absolute;
+    top: 120px;
+}
+
+
+#box_red{
 
     width: 100px;
     height: 100px;
     background-color: red;
-    position: relative;
+    position: absolute;
+    top: 0px;
+    left: 120px;
+    text-align: center;
+    align-content: center;
+    font-weight: 600;
+}
+
+#box_green{
+
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
     text-align: center;
     align-content: center;
     font-weight: 600;

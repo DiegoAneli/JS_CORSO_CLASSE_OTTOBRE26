@@ -80,7 +80,6 @@ let etaUt = prompt("Inserisci l età : ");
 
 let etaUtente = Number(etaUt);
 
-
 function verificaEta(x){
 
     if(x >= 18){
@@ -108,6 +107,7 @@ alert(messaggio);
 //creare una funzione che calcola il prezzo di un prodotto
 // - in base alla percentuale di sconto inserita dall utente
 //Chiedi all utente il prezzo del prodotto e la % di sconto
+
 // i prezzi sono decimali -> parsefloat()
 // - al risultato applicate risultato.toFixed(2)
 /*
@@ -118,7 +118,7 @@ function calcolaPrezzo(x, y){
     //formula calcolo sconto
     let valoresconto = (x * y) / 100;
     let prezzofinale = x - valoresconto;
-    return prezzofinale.toFixed(2);
+    return prezzofinale.toFixed(2); 
 }
 
 
