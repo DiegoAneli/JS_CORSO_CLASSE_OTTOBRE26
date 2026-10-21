@@ -199,3 +199,7 @@ console.log(somma);
 let media = somma / listaP.length;
 
 console.log(media);
+
+
+
+let arraybidimensione = [[],[],[],[]] //matrice
