@@ -7,11 +7,14 @@ function sfidaGiocatori(){
 
     //lancio dei dadi 1 giocatore
     const dado1G1 = Math.floor(Math.random() * 6) + 1;
+    console.log(dado1G1);
     const dado2G1 = Math.floor(Math.random() * 6) + 1;
-
+    console.log(dado2G1);
     //lancio dei dadi 2 giocatore
     const dado1G2 = Math.floor(Math.random() * 6) + 1;
+    console.log(dado1G2);
     const dado2G2 = Math.floor(Math.random() * 6) + 1;
+    console.log(dado2G2);
 
     //calcolo dei punteggi 
     const totaleG1 = dado1G1 + dado2G1;
