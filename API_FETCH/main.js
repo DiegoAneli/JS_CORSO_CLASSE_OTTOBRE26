@@ -34,8 +34,9 @@ function renderUsers(data){
     userList.innerHTML = "";
 
 
-
-    data.forEach(user =>{
+    //lo slice determina quanti elementi voglio mostare 
+    //se l api non ci da la possibilità di settare il limit in entrata del numero di obj
+    data.slice(0, 6).forEach(user =>{
 
         
         // Creo la colonna Bootstrap
@@ -51,36 +52,32 @@ function renderUsers(data){
         cardBody.className = 'card-body';
         
         // Creo il titolo della card
-        const userName = document.createElement('h3');
-        userName.className = 'card-title';
-        userName.textContent = user.title;
+        const userTitle = document.createElement('h3');
+        userTitle.className = 'card-title text-center';
+        userTitle.textContent = user.title;
 
         // Creo il paragrafo con l email
-        const userEmail = document.createElement('p');
-        userEmail.className = 'card-text';
-        userEmail.textContent = user.description;
+        const userDescription = document.createElement('p');
+        userDescription.className = 'card-text';
+        userDescription.textContent = user.description;
 
-        // Creo il paragrafo con l id
-        const userId = document.createElement('div');
-        userId.className = 'card h-100';
+        // Creo la card 
+        const userCard = document.createElement('div');
+        userCard.className = 'card';
         
+        // Creo l image
         const img = document.createElement('img');
-
         img.src = user.image;
-
-        img.className ='card-img-top';
-
+        img.className ='card-img-top mx-auto mb-4';
         img.style.width = '200px';
         img.style.height = '200px';
         img.style.objectFit = 'cover';
-
-
-
+        
 
         //Inserisco i dati nel body della card
-        cardBody.appendChild(userName);
-        cardBody.appendChild(userEmail);
-        cardBody.appendChild(userId);
+        cardBody.appendChild(userTitle);
+        cardBody.appendChild(userDescription);
+        cardBody.appendChild(userCard);
 
         //Inserisco cardbody dentro alla card
         card.appendChild(cardBody);
@@ -91,8 +88,6 @@ function renderUsers(data){
 
         //inserisco col dentro a userlist
         userList.appendChild(col);
-
-
 
     })
 }
