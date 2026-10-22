@@ -1,6 +1,6 @@
 //ENDPOINT (FONTE DI DATI) 
 
-const endpoint = 'https://jsonplaceholder.typicode.com/users';
+const endpoint = 'https://api.sampleapis.com/coffee/hot';
 
 
 function fetchUsers(){
@@ -29,23 +29,59 @@ function fetchUsers(){
 
 function renderUsers(data){
 
+
+    //SVUOTO INIZIALMENTE LA LISTA, CHE VERRà POPOLATA CON IL FOREACH
+    userList.innerHTML = "";
+
+
+
     data.forEach(user =>{
 
-        //PER OGNI UTENTE DOBBIAMO CREARE UN ELEMENTO NELL HTML
-        //quindi voglio aggiungere un tag <li> dentro alla <ul>
+        
+        // Creo la colonna Bootstrap
+        const col = document.createElement('div');
+        col.className = 'col-12 col-md-6 col-lg-4';
 
-        const divId = document.createElement('div');
-        const divName = document.createElement('div');
+        // Creo la card 
+        const card = document.createElement('div');
+        card.className = 'card shadow-sm';
 
-        //imposto il contenuto dell li con nome ed email
+        // Creo il body della card
+        const cardBody = document.createElement('div');
+        cardBody.className = 'card-body';
+        
+        // Creo il titolo della card
+        const userName = document.createElement('h3');
+        userName.className = 'card-title';
+        userName.textContent = user.title;
 
-        //template literals
-        divId.textContent = `${user.id}`;
-        divName.textContent = `${user.name}`;
+        // Creo il paragrafo con l email
+        const userEmail = document.createElement('p');
+        userEmail.className = 'card-text';
+        userEmail.textContent = user.image;
 
-        //appendere il <li> alla lista HTML (<ul> con id="user-list")
-        userList.appendChild(divId);
-        userName.appendChild(divName);
+        // Creo il paragrafo con l id
+        const userId = document.createElement('img');
+        userId.className = 'text-muted';
+        userId.textContent = user.ingredients;
+
+
+
+        //Inserisco i dati nel body della card
+        cardBody.appendChild(userName);
+        cardBody.appendChild(userEmail);
+        cardBody.appendChild(userId);
+
+        //Inserisco cardbody dentro alla card
+        card.appendChild(cardBody);
+
+        //Inserisco card dentro a col
+        col.appendChild(card);
+
+        //inserisco col dentro a userlist
+        userList.appendChild(col);
+
+
 
     })
 }
