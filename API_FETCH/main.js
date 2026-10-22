@@ -40,7 +40,7 @@ function renderUsers(data){
         
         // Creo la colonna Bootstrap
         const col = document.createElement('div');
-        col.className = 'col-12 col-md-6 col-lg-4';
+        col.className = 'col-6 col-md-6 col-lg-4';
 
         // Creo la card 
         const card = document.createElement('div');
@@ -58,12 +58,22 @@ function renderUsers(data){
         // Creo il paragrafo con l email
         const userEmail = document.createElement('p');
         userEmail.className = 'card-text';
-        userEmail.textContent = user.image;
+        userEmail.textContent = user.description;
 
         // Creo il paragrafo con l id
-        const userId = document.createElement('img');
-        userId.className = 'text-muted';
-        userId.textContent = user.ingredients;
+        const userId = document.createElement('div');
+        userId.className = 'card h-100';
+        
+        const img = document.createElement('img');
+
+        img.src = user.image;
+
+        img.className ='card-img-top';
+
+        img.style.width = '200px';
+        img.style.height = '200px';
+        img.style.objectFit = 'cover';
+
 
 
 
@@ -74,6 +84,7 @@ function renderUsers(data){
 
         //Inserisco cardbody dentro alla card
         card.appendChild(cardBody);
+        card.appendChild(img);
 
         //Inserisco card dentro a col
         col.appendChild(card);
