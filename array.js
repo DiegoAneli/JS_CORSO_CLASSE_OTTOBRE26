@@ -245,3 +245,12 @@ const totaleCarello = carrello.reduce((accumulatore, i) => {
 
 
 
+//////////////////////////////Esercizi combinati
+
+
+//abbiamo un array di prodotti informatici voglio selezionare i prodotti con prezzo inferiore a 100 euro
+//successivamente voglio estrarne il nome
+//1 console.log -> prodottiEconomici
+
+
+
