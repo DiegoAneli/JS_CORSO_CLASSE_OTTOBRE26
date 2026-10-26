@@ -1,6 +1,6 @@
 //dare un nome parlante all funzione
 
-//funzioni anonime
+//funzioni
 function saluta(){
 
     //questo è cio' che fa la funzione, ovvero stampare in console.log la stringa
@@ -187,9 +187,3 @@ if (mediaClasse >= 6 ){
 
     console.log("Classe bocciata.");
 }
-
-
-
-
-
-

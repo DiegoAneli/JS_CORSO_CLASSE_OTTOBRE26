@@ -97,3 +97,5 @@ function renderUsers(data){
 
 //richiamo funzione per essere esguita
 fetchUsers();
+
+

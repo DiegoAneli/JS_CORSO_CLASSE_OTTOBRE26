@@ -126,12 +126,12 @@ const cane = {
 
     },
 
-    mangia: function(){
+    mangia: () => {
 
         console.log("gnam gnam!");
 
     }
-
+    
 }
 
 
