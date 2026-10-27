@@ -159,8 +159,8 @@ const nomiInMaiuscolo = nomi.map(
 
 const numeri = [34, 56, 7, 100, 37, 3];
 
-//Controlla ogni elemento dell array se restituisce true, 
-//l elemento viene mantenuto se restituisce false viene escluso
+//Controlla ogni elemento dell array e, se restituisce true, l elemento viene mantenuto 
+//se restituisce false viene escluso
 
 const maggioreDiCinquanta = numeri.filter((n) => {
 
@@ -244,13 +244,81 @@ const totaleCarello = carrello.reduce((accumulatore, i) => {
 
 
 
-
-//////////////////////////////Esercizi combinati
-
+//////////////////////////////  Esercizio combinato con Filter() e Map()
 
 //abbiamo un array di prodotti informatici voglio selezionare i prodotti con prezzo inferiore a 100 euro
 //successivamente voglio estrarne il nome
 //1 console.log -> prodottiEconomici
+
+const prodotti = [
+
+        {nome: "Mouse", prezzo: 19},
+        {nome: "Tastiera", prezzo: 40},
+        {nome: "Monitor", prezzo: 120},
+        {nome: "Macbook", prezzo: 2499},
+        {nome: "Webcam", prezzo: 75}
+];
+
+//selezionare i prodotti con prezzo inferiore a 100 
+
+const prodottiEconomici = prodotti
+
+    .filter((p) => {
+
+        return p.prezzo < 100;
+
+    })
+
+    .map((p) => {
+
+        return p.nome;
+
+    });
+
+    console.log(prodottiEconomici);
+
+
+
+
+////////////////////////////////  Esercizio combinato con filter() e 
+
+//Abbiamo una lista di prodotti, con prezzo e disponibilità, 
+//voglio solamente i prodotti disponibili 
+//e la somma dei prezzi degli oggetti disponibili
+
+
+const prodottiList = [
+
+        {nome: "Mouse", prezzo: 19, disponibilita: true},
+        {nome: "Tastiera", prezzo: 40, disponibilita: false},
+        {nome: "Monitor", prezzo: 120, disponibilita: false},
+        {nome: "Macbook", prezzo: 2499, disponibilita: true},
+        {nome: "Webcam", prezzo: 75, disponibilita: false}
+];
+
+
+const prodottiDisponibili = prodottiList
+
+    .filter((p) => {
+
+        return p.disponibilita === true;
+        
+    })
+
+    .reduce((accumulatore, p) => {
+
+        return accumulatore + p.prezzo;
+
+    }, 0);
+
+
+    console.log(prodottiDisponibili);
+
+
+
+
+
+
 
 
 
